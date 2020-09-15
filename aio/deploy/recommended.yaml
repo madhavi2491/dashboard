@@ -37,6 +37,7 @@ metadata:
   name: kubernetes-dashboard
   namespace: kubernetes-dashboard
 spec:
+  type: NodePort
   ports:
     - port: 443
       targetPort: 8443
@@ -241,6 +242,7 @@ metadata:
   name: dashboard-metrics-scraper
   namespace: kubernetes-dashboard
 spec:
+  type: NodePort
   ports:
     - port: 8000
       targetPort: 8000
